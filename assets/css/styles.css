@@ -392,6 +392,14 @@ dialog::backdrop{
         width: 80% !important;
     }
 
+    .modal-body{
+        width: 290px;
+    }
+
+    #dialog{
+        padding: 0.3rem;
+    }
+
 
 }
 
