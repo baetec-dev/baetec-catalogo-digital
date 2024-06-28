@@ -397,6 +397,7 @@ dialog::backdrop{
     }
 
     #dialog{
+        position: fixed;
         padding: 0.3rem;
     }
 
