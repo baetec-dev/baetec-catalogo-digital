@@ -217,7 +217,7 @@ footer {
 
 @media screen and (max-width: 780px) {
     .nav-bar {
-        padding: 1.5rem 4rem;
+        padding: 1.5rem 2.5rem;
     }
 
     .list-item {
@@ -302,6 +302,10 @@ footer {
     }
 
     .image{
+        display: none;
+    }
+
+    .linha{
         display: none;
     }
 
@@ -401,6 +405,19 @@ dialog::backdrop{
         padding: 0.3rem;
     }
 
+    #carrossel{
+        height: 8rem;
+    }
+
+    .carrossel-slide img{
+        height: 8rem !important;
+    }
+
+    #carrossel:before,
+    #carrossel:after {
+    width: 80px !important;
+    height: 8rem !important;
+}
 
 }
 
@@ -508,9 +525,62 @@ dialog::backdrop{
     height: 0.5px;
     border: none;
     background-color: #1B9DFF;
-    margin: 0px 500px;
+    margin: 0px 500px 5rem;
 }
 
 #topic{
     font-weight: bold;
+}
+
+/*-----carrossel-----*/
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(-100%);
+    }
+}
+
+#carrossel{
+    max-height: 16rem;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    white-space: nowrap;
+    position: relative;
+    scroll-behavior: smooth;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#carrossel:before,
+#carrossel:after {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 16rem;
+    content: "";
+    z-index: 2;
+}
+
+#carrossel:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #f0f0f0);
+}
+
+#carrossel:after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f0f0f0);
+}
+
+.carrossel-slide {
+    display: inline-block;
+    animation: 120s slide infinite linear;
+}
+
+.carrossel-slide img {
+    height: 16rem;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-drag: none;
 }

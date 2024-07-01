@@ -16,4 +16,3 @@ function closeModal(){
     let dialog = document.querySelector("dialog");
     dialog.close();
 }
-

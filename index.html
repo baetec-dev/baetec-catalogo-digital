@@ -217,6 +217,20 @@ Caso pretenda exercer qualquer um dos direitos previstos nesta Política de Priv
 
         <hr class="linha">
 
+        <section id="carrossel" class="carrossel">
+            <div class="carrossel-slide">
+                <img src="assets/img/Mask group-1.svg" alt="fotos Baetec">
+                <img src="assets/img/Mask group-2.svg" alt="fotos Baetec">
+                <img src="assets/img/Mask group-3.svg" alt="fotos Baetec">
+                <img src="assets/img/Mask group-4.svg" alt="fotos Baetec">
+                <img src="assets/img/Mask group-5.svg" alt="fotos Baetec">
+                <img src="assets/img/Mask group-6.svg" alt="fotos Baetec">
+                <img src="assets/img/Mask group-7.svg" alt="fotos Baetec">
+                <img src="assets/img/Mask group-8.svg" alt="fotos Baetec">
+                <img src="assets/img/Mask group.svg" alt="fotos Baetec">
+            </div>
+        </section>
+
         <section id="destaques">
             <h3>Destaques</h3>
             <div id="card-container">
@@ -259,8 +273,6 @@ Caso pretenda exercer qualquer um dos direitos previstos nesta Política de Priv
             </div>
         </section>
 
-
-
     </main>
 
     <footer>
@@ -295,10 +307,10 @@ Caso pretenda exercer qualquer um dos direitos previstos nesta Política de Priv
                     <h3>Catálogos</h3>
                 </li>
                 <li>
-                   <a href="#" class="footer-link">Piscinas</a> 
+                   <a href="./pages/piscina/index.html" class="footer-link">Piscinas</a> 
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Caminhões</a> 
+                    <a href="./pages/caminhao/index.html" class="footer-link">Caminhões</a> 
                 </li>
                 <li>
                     <a href="#" class="footer-link">Veículos</a> 
@@ -328,5 +340,9 @@ Caso pretenda exercer qualquer um dos direitos previstos nesta Política de Priv
     </footer>
     
     <script src="assets/js/script.js"></script>
+    <script>
+        var copia = document.querySelector(".carrossel-slide").cloneNode(true);
+        document.querySelector(".carrossel").appendChild(copia);
+    </script>
 </body>
 </html>
