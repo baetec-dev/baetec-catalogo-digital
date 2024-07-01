@@ -392,6 +392,10 @@ dialog::backdrop{
         gap: 2rem;
     }
 
+    #footer_contacts img{
+        height: 70px;
+    }
+
     .card{
         width: 80% !important;
     }
